@@ -8,7 +8,7 @@ Instructions to build kernel from source :
  chmod +x ~/bin/repo
  mkdir test_build && cd test_build
  repo init --no-repo-verify -u git://github.com/cubieboard2/manifests -b cb2 -m test.xml
- wget https://raw.github.com/hehopmajieh/OLinuXino-A20/master/olinuxinoA20_defconfig -O arch/arm/configs/olinuxinoA20_defconfig
+ wget https://raw.github.com/hehopmajieh/OLinuXino-A20/master/olinuxinoA20-3.3_defconfig-O arch/arm/configs/olinuxinoA20_defconfig
  make ARCH=arm olinuxinoA20_defconfig
  make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 uImage
  make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 INSTALL_MOD_PATH=out modules
